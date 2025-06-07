@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
 const skills = [
   { name: 'Node.js', icon: 'pi pi-server', gradient: 'from-green-500 to-green-700' },
@@ -26,12 +26,6 @@ let animationFrame: number;
 
 onMounted(() => {
   startAnimation();
-});
-
-onUnmounted(() => {
-  if (animationFrame) {
-    cancelAnimationFrame(animationFrame);
-  }
 });
 
 const startAnimation = () => {
@@ -78,21 +72,19 @@ const startAnimation = () => {
         <div class="absolute inset-0 bg-gradient-to-r from-primary-500/5 via-transparent to-primary-500/5"></div>
 
         <div ref="containerRef" 
-             class="flex gap-3 sm:gap-4 lg:gap-6" 
-             @mouseenter="isHovered = true" 
-             @mouseleave="isHovered = false">
+             class="flex gap-3 sm:gap-4 lg:gap-6" >
           <div v-for="(skill, index) in duplicatedSkills" 
                :key="`${skill.name}-${index}`" 
                class="flex-shrink-0">
             <div class="rounded-lg w-36 sm:w-40 lg:w-48 h-32 sm:h-36 bg-surface-900/20 backdrop-blur-xl 
-                      border border-surface-800/10 hover:border-primary-500/30 transition-all duration-500 
+                      border border-surface-800/10 transition-all duration-500 
                       shadow-2xl transform-gpu group">
               <div class="flex flex-col items-center justify-center h-full p-4 sm:p-6 relative overflow-hidden">
                 <div class="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-transparent 
-                           opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                           opacity-0 transition-opacity duration-500"></div>
                 <div :class="`w-10 sm:w-12 lg:w-14 h-10 sm:h-12 lg:h-14 rounded-xl sm:rounded-2xl 
                              bg-gradient-to-r ${skill.gradient} flex items-center justify-center mb-3 sm:mb-4 
-                             shadow-2xl relative z-10 group-hover:scale-110 transition-transform duration-300`">
+                             shadow-2xl relative z-10`">
                   <i :class="[skill.icon, 'text-xl sm:text-2xl text-white']"></i>
                 </div>
                 <h3 class="bg-gradient-to-r from-white to-surface-200 bg-clip-text text-transparent 

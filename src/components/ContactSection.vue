@@ -20,7 +20,7 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <section id="contact" class="py-24 bg-surface-950 relative overflow-hidden">
+  <section id="contact" class="py-24 bg-surface-950 relative overflow-hidden p-10">
     <div class="absolute inset-0 opacity-30">
       <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full filter blur-3xl"></div>
       <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-600/20 rounded-full filter blur-3xl"></div>

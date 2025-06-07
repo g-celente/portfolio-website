@@ -60,7 +60,7 @@ const projects = [
 
 <template>
 
-  <section id="projects" class="py-24 bg-surface-900/50 p-20">
+  <section id="projects" class="py-24 bg-surface-900/50 p-10">
     <div class="section-container">
       <h2 class="heading-xl text-center mb-12 text-lg"> 
             <span class="bg-gradient-to-r from-primary-400 to-primary-600 text-transparent bg-clip-text animate-pulse">Featured Projects</span>

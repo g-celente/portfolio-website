@@ -25,7 +25,6 @@ onMounted(() => {
       <SkillsSection />
       <AboutSection />
       <ProjectsSection />
-      <ContactSection />
     </main>
     <Footer />
   </div>

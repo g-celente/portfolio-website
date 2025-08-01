@@ -10,16 +10,20 @@ const year = new Date().getFullYear();
           <h3 class="text-xl font-bold mb-4">Contact</h3>
           <p class="flex items-center gap-2">
             <i class="pi pi-envelope"></i>
-            email@example.com
+            celente.guilherme@outlook.com
+          </p>
+          <p class="flex items-center gap-2">
+            <i class="pi pi-phone"></i>
+            +55 (41) 9 9649-1619
           </p>
         </div>
         <div>
           <h3 class="text-xl font-bold mb-4">Follow Me</h3>
           <div class="flex space-x-4">
-            <a href="#" class="hover:text-primary transition-colors">
+            <a href="https://github.com/g-celente" class="hover:text-primary transition-colors">
               <i class="pi pi-github text-xl"></i>
             </a>
-            <a href="#" class="hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/guilherme-celente-7105ba2bb" class="hover:text-primary transition-colors">
               <i class="pi pi-linkedin text-xl"></i>
             </a>
           </div>

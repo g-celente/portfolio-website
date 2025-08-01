@@ -45,10 +45,6 @@ onMounted(() => {
               <i class="pi pi-github text-lg sm:text-xl"></i>
               View Projects
             </a>
-            <button class="btn-outline w-full sm:w-auto justify-center text-sm sm:text-base">
-              <i class="pi pi-envelope text-lg sm:text-xl"></i>
-              Contact Me
-            </button>
           </div>
         </div>
       </div>
